@@ -6,6 +6,22 @@ Windows MVP **v0.5.0**, C# / .NET 10 / WinForms. Designed for Windows 10 22H2 x6
 
 Contact: [Facebook — MHZ Band Radio](https://www.facebook.com/mhzbandradio) / [Website — mhz.band](https://mhz.band)
 
+## ดาวน์โหลดสำหรับผู้ใช้ทั่วไป
+
+- [ดาวน์โหลด MHZ TimeSync เวอร์ชันล่าสุด](https://github.com/mhzband/mhz-timesync/releases/latest)
+- แตกไฟล์ ZIP ทั้งหมด แล้วเปิด MHZ.TimeSync.exe
+- โปรแกรมเป็น portable ไม่ต้องติดตั้ง .NET เพิ่ม
+
+## คู่มือเริ่มใช้งาน
+
+![คู่มือเริ่มใช้งาน MHZ TimeSync v0.5.0](docs/mhz-time-sync-intro.png)
+
+1. ใน WSJT-X ไปที่ **File → Settings → Reporting** แล้วตั้ง UDP Server เป็น 127.0.0.1 และ port 2237
+2. เปิด MHZ TimeSync และเลือก **AUTO** สำหรับการใช้งานทั่วไป, **NTP Thailand** เมื่อใช้ NTP อย่างเดียว หรือ **Offline FT8** เมื่อไม่มี Internet
+3. กด **Measure NTP** หรือรอรับ FT8 จนมีข้อมูลเพียงพอ
+4. ตรวจค่า correction และสถานะ จากนั้นหยุดส่งสัญญาณและปิด **Enable Tx**
+5. กด **Sync Now / Correct Clock** ตรวจค่าบนหน้าต่างยืนยัน แล้วอนุมัติ UAC
+6. **Auto Correct ปิดเป็นค่าเริ่มต้น** และ FT8 เป็น Estimated Time Correction ไม่ใช่ absolute UTC
 ![MHZ TimeSync v0.5.0](docs/MHZ-TimeSync-v0.5.0.png)
 
 ## ใหม่ใน v0.5.0 — Compact UI / Logo / Icon
@@ -167,3 +183,4 @@ dotnet run --project src/Mhz.TimeSync.App -c Release
 - รายชื่อ server ในเอกสาร NECTEC: https://www.nectec.or.th/standard/wp-content/uploads/2022/10/NTS3009_1-2565.pdf
 - Windows SetSystemTime: https://learn.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-setsystemtime
 - .NET Windows support: https://learn.microsoft.com/en-us/dotnet/core/install/windows
+
