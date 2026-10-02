@@ -167,4 +167,3 @@ dotnet run --project src/Mhz.TimeSync.App -c Release
 - รายชื่อ server ในเอกสาร NECTEC: https://www.nectec.or.th/standard/wp-content/uploads/2022/10/NTS3009_1-2565.pdf
 - Windows SetSystemTime: https://learn.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-setsystemtime
 - .NET Windows support: https://learn.microsoft.com/en-us/dotnet/core/install/windows
-

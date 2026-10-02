@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\MHZ-TimeSync.ico</ApplicationIcon>
+    <AssemblyName>MHZ.TimeSync</AssemblyName>
+    <Product>MHZ TimeSync — Offline FT8 Clock Sync</Product>
+    <Version>0.5.0</Version>
+    <FileVersion>0.5.0.0</FileVersion>
+    <AssemblyVersion>0.5.0.0</AssemblyVersion>
+    <Authors>HS9XKG</Authors>
+    <Company>MHZ</Company>
+    <Copyright>Copyright © 2026 HS9XKG. All rights reserved.</Copyright>
+    <Description>Windows clock synchronization for amateur-radio operators using Thailand NTP and estimated FT8 DT correction.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mhz.TimeSync.Core/Mhz.TimeSync.Core.csproj" />
+    <EmbeddedResource Include="Assets\MHZ-TimeSync.ico" LogicalName="Mhz.TimeSync.App.Assets.MHZ-TimeSync.ico" />
+    <EmbeddedResource Include="Assets\MHZ-TimeSync-Logo.png" LogicalName="Mhz.TimeSync.App.Assets.MHZ-TimeSync-Logo.png" />
+  </ItemGroup>
+</Project>
+
